@@ -1,15 +1,15 @@
 FROM node:8.9
 
-RUN mkdir /root/server
-RUN chmod 777 /root/server/
+RUN mkdir /app
+RUN chmod 777 /app/
 
-COPY . /root/server/
-RUN chmod 777 -R /root/server
+COPY . /app/
+RUN chmod 777 -R /app
 
 EXPOSE 3000
 
-WORKDIR /root/server
+WORKDIR /app
 
 RUN npm install
 
-CMD sleep 10000000
+CMD node index.js
