@@ -9,6 +9,7 @@ app.use(express.static(APP_DIR));
 app.get('/convert', (req, res) => {
     res.send('Hello World!');
     console.log(req);
+    console.log("------------" + new Date() + "------------\n");
 })
 
 app.listen(3000, () => {
