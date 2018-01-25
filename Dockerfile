@@ -4,6 +4,7 @@ RUN mkdir /root/server
 RUN chmod 777 /root/server/
 
 COPY . /root/server/
+RUN chmod 777 -R /root/server
 
 EXPOSE 3000
 
