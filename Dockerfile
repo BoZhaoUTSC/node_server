@@ -11,4 +11,4 @@ WORKDIR /root/server
 
 RUN npm install
 
-CMD node /root/server/index.js
+CMD sleep 10000000
