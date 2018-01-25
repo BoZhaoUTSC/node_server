@@ -1,6 +1,7 @@
 FROM node:8.9
 
 RUN mkdir /root/server
+RUN chmod 777 /root/server/
 
 COPY . /root/server/
 
