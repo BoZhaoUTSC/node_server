@@ -14,7 +14,15 @@ app.get('/convert', (req, res) => {
 })
 
 app.post('/convert', (req, res) => {
-    res.send('Hello World!');
+    res.json(
+        {
+            "speech": "hello world",
+            "displayText": "hello world",
+            "data": {},
+            "contextOut": [],
+            "source": "hello world"
+        }
+    );
     console.log(req);
     console.log("------------" + new Date() + "-----POST-------\n");
 })
