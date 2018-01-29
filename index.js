@@ -5,9 +5,9 @@ var express     = require('express'),
     request     = require('request');
 
 
-app.use(express.static(APP_DIR));
+// app.use(express.static(APP_DIR));
 
-app.get('/convert', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hello World!');
     console.log(req);
     console.log("------------" + new Date() + "-----GET--------\n");
